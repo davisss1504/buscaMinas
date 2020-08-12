@@ -24,6 +24,7 @@ function reiniciar() {
   crearTablero(FILAS, COLUMNAS);
 }
 
+
 function terminado(ganador) {
   let mensaje = null;
   let icono = null;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,15 @@
 
         <div class="coll text-center">
             <img src="./assets/img/logo.jpg" class="logo">
-        <form> 
+      
             <h5>Ingresa tu Nombre</h5>
-            <input class="nombre" type="text" name="nombre" id="nombre" >
+            <form action="vista/juego.html" method="post">
+            <input type="text" name="nombre" id="nombre" >
             <br><br>
-            <button type="submit" class="btn btn-primary" onclick="registro()">Empezar Juego</button>            
-        </form>
+            <button type="submit" name="empezar" class="btn btn-primary" onclick="registro()">Empezar Juego</button>            
+       
         </div>
-        <script src="controlador/autenticador.js" charset="utf-8"></script>
+        <script src="controlador/autenticador.js"></script>
 
 </body>
 </html>

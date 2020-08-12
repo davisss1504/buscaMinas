@@ -2,20 +2,27 @@
 <html>
   <head>
     <title>Buscaminas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/estilos/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
   </head>
   
   <body>
     <h1>BIENVENIDO</h1>
     <h1 id="usuario"></h1>
-
     <div id="board"></div>
+    <div>
+      <br>     
+      <button type="submit" name="reiniciar" class="btn btn-primary" onclick="reiniciar()">Reiniciar Partida</button>    
+    </div>
+
+
     <script src="../controlador/tablero.js"></script>
     <script>  
       document.getElementById("usuario").innerHTML = sessionStorage.getItem("usuario");
-    </script>
+    </script> 
   </body>
 </html>
